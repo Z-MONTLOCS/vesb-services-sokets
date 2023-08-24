@@ -21,7 +21,10 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+
 SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
+PORT = os.environ.get('PORT', default=8765)
+
 
 CHROME_PATH = os.environ.get('CHROME_PATH',  default='/opt/render/project/bin/chrome-linux64')
 
