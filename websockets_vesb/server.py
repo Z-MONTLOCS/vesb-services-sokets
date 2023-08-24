@@ -273,9 +273,7 @@ async def handle_client(websocket, path):
 
 
 
-start_server = websockets.serve(handle_client, "0.0.0.0", 10000)
-print("Conexión establecida con el servidor en línea")
-
+start_server = websockets.serve(handle_client, "localhost", 8765)
 
 asyncio.get_event_loop().run_until_complete(start_server)
 asyncio.get_event_loop().run_forever()
