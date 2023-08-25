@@ -79,8 +79,7 @@ echo "Installed Chromedriver Version:"
 
 echo ".inicando servidor..."
 #pip install -r requirements.txt
-cd ./websockets_vesb/
-python server.py
+
 
 echo "...Build Script Completed!"
 
