@@ -273,7 +273,7 @@ async def handle_client(websocket, path):
 
 
 
-start_server = websockets.serve(handle_client, "vesb-services-v1.onrender.com", 8765)
+start_server = websockets.serve(handle_client, "localhost", 10000)
 
 asyncio.get_event_loop().run_until_complete(start_server)
 asyncio.get_event_loop().run_forever()
